@@ -1,4 +1,4 @@
-const express = require("express")
+const express = require('express')
 
 const conectarDB = require('./config/db')
 
@@ -15,12 +15,15 @@ const PORT = process.env.PORT || 4000
 
 //imprtar rutas
 
-app.use("/api/usuarios", require('./routes/usuarios'))
+app.use('/api/usuarios', require('./routes/usuarios'))
+app.use('/api/auth', require('./routes/auth'))
+app.use('/api/proyectos', require('./routes/proyectos'))
+app.use('/api/tareas', require('./routes/tareas'))
 
 //pagina principal
-app.get("/", (req, res) => {
-  res.send("hola mundilla")
-  console.log("get")
+app.get('/', (req, res) => {
+  res.send('hola mundilla')
+  console.log('get')
 })
 
 app.listen(PORT, () => {
