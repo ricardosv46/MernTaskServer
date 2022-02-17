@@ -1,11 +1,14 @@
 const express = require('express')
-
 const conectarDB = require('./config/db')
+const cors = require('cors')
 
 const app = express()
 
 //conectra ala base de Ddatos
 conectarDB()
+
+//habilitar cors
+app.use(cors())
 
 //Habilitar express.json
 app.use(express.json({ extended: true }))
