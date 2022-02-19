@@ -23,12 +23,6 @@ app.use('/api/auth', require('./routes/auth'))
 app.use('/api/proyectos', require('./routes/proyectos'))
 app.use('/api/tareas', require('./routes/tareas'))
 
-//pagina principal
-app.get('/', (req, res) => {
-  res.send('hola mundilla')
-  console.log('get')
-})
-
 app.listen(port, '0.0.0.0', () => {
   console.log(`EL SERVIDOR ESTA ACTIVO EN EL PUERTO ${port}`)
 })
