@@ -14,7 +14,7 @@ app.use(cors())
 app.use(express.json({ extended: true }))
 
 // puerto de la app
-const port = process.env.port || 4000
+const port = process.env.PORT || 4000
 
 //imprtar rutas
 
@@ -30,5 +30,5 @@ app.get('/', (req, res) => {
 })
 
 app.listen(port, '0.0.0.0', () => {
-  console.log(`EL SERVIDOR ESTA ACTIVO EN EL PUERTO ${PORT}`)
+  console.log(`EL SERVIDOR ESTA ACTIVO EN EL PUERTO ${port}`)
 })
