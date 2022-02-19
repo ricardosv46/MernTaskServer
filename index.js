@@ -11,7 +11,7 @@ conectarDB()
 const whitelist = [
   'http://localhost:3000',
   'https://mern-stack-proyectos.vercel.app',
-  'https://mern-proyect.netlify.app/'
+  'https://mern-proyect.netlify.app'
 ]
 const options = {
   origin: (origin, callback) => {
