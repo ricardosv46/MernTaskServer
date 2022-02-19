@@ -1,6 +1,6 @@
 const express = require('express')
 const router = express.Router()
-const TareaController = require('../Controllers/TareaController')
+const TareaController = require('../Controllers/tareaController')
 const auth = require('../middleware/auth')
 const { check } = require('express-validator')
 
