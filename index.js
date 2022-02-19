@@ -28,7 +28,7 @@ const port = process.env.PORT || 4000
 
 //imprtar rutas
 
-app.use('/api/usuarios', require('./routes/usuario.js'))
+app.use('/api/usuarios', require('./routes/usuarios.js'))
 app.use('/api/auth', require('./routes/auth.js'))
 app.use('/api/proyectos', require('./routes/proyectos.js'))
 app.use('/api/tareas', require('./routes/tareas.js'))
