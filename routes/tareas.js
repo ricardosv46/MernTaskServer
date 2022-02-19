@@ -1,4 +1,3 @@
-// rutas para crear usuarios
 const express = require('express')
 const router = express.Router()
 const TareaController = require('../Controllers/TareaController')
