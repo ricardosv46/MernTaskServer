@@ -1,5 +1,5 @@
 const express = require('express')
-const conectarDB = require('./config/db')
+const conectarDB = require('./config/db.js')
 const cors = require('cors')
 
 const app = express()
@@ -28,10 +28,10 @@ const port = process.env.PORT || 4000
 
 //imprtar rutas
 
-app.use('/api/usuarios', require('./routes/usuarios'))
-app.use('/api/auth', require('./routes/auth'))
-app.use('/api/proyectos', require('./routes/proyectos'))
-app.use('/api/tareas', require('./routes/tareas'))
+app.use('/api/usuarios', require('./routes/usuario.js'))
+app.use('/api/auth', require('./routes/auth.js'))
+app.use('/api/proyectos', require('./routes/proyectos.js'))
+app.use('/api/tareas', require('./routes/tareas.js'))
 
 // arrancar la app
 app.listen(port, '0.0.0.0', () => {
