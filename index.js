@@ -8,7 +8,11 @@ const app = express()
 conectarDB()
 
 // habilitar cors
-const whitelist = ['http://localhost:3000']
+const whitelist = [
+  'http://localhost:3000',
+  'https://mern-stack-proyectos.vercel.app',
+  'https://mern-proyect.netlify.app/'
+]
 const options = {
   origin: (origin, callback) => {
     if (whitelist.includes(origin)) {
