@@ -30,8 +30,8 @@ app.use(express.json({ extended: true }))
 // puerto de la app
 const port = process.env.PORT || 4000
 
-//imprtar rutas
-
+//importar rutas
+app.get('/',(req, res)=> { return res.json({msg:'Bienvenido')})
 app.use('/api/usuarios', require('./routes/usuarios.js'))
 app.use('/api/auth', require('./routes/auth.js'))
 app.use('/api/proyectos', require('./routes/proyectos.js'))
